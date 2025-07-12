@@ -27,6 +27,9 @@ export function Header() {
       <span className="flex-1 px-4 truncate text-center text-bolt-elements-textPrimary">
         <ClientOnly>{() => <ChatDescription />}</ClientOnly>
       </span>
+      <a href="/superbill" className="text-sm text-bolt-elements-textPrimary hover:underline">
+        Superbill
+      </a>
       {chat.started && (
         <ClientOnly>
           {() => (
